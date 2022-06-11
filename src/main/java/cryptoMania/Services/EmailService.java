@@ -21,7 +21,7 @@ public class EmailService {
   @Autowired
   private SignupEmail signupEmail;
   public String sendSignUpEmail (User user,String token) throws MessagingException{
-    String url = "https://react-cryptomania.netlify.app/verification/"+ token;
+    String url = "https://react-cryptomania.herokuapp.com/verification/"+ token;
     try{
       MimeMessage mimeMessage = mailSender.createMimeMessage();
       MimeMessageHelper helper = new MimeMessageHelper(mimeMessage,"utf-8");
