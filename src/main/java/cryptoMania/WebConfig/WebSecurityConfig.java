@@ -23,7 +23,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
   UserDetailsServiceImpl userDetailsServiceImpl;
   @Autowired
   private JwtFilter jwtFilter;
-  final private String[] PermitedUrls = {"/api/user","/api/login","/api/home","/api/signup","/api/verifyRegistration/**"};
+  final private String[] PermitedUrls = {"/api/user","/api/login","/api/home","/api/news","/api/signup","/api/verifyRegistration/**"};
 
   @Bean
   public PasswordEncoder passwordEncoder(){
