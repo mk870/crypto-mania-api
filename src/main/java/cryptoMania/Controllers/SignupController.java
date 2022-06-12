@@ -12,9 +12,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+
 import cryptoMania.DataTransferObjects.LoginDTO;
 import cryptoMania.DataTransferObjects.SignUpDTO;
 import cryptoMania.DataTransferObjects.UserDTO;
+import cryptoMania.Services.GetNews;
 import cryptoMania.Services.UserServiceImpl;
 
 
@@ -25,10 +27,16 @@ import cryptoMania.Services.UserServiceImpl;
 public class SignupController {
   @Autowired
   private UserServiceImpl userServiceImpl;
-
+  @Autowired
+  private GetNews getNews;
   @GetMapping("/home")
   public String welcome(){
     return "welcome to cryptoMania database";
+  }
+
+  @GetMapping("/news")
+  public ResponseEntity<?> getNews(){
+    return ResponseEntity.ok(getNews.newsApi()) ;
   }
 
   @PostMapping("/signup")
