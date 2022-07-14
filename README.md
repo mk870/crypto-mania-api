@@ -32,7 +32,7 @@ Built 2 Controllers, one for user account creation and the other for user data i
 
 #### **User Data Interaction Endpoints:**  
 * **/save (PostMethod)**:  saves user crypto coins to the database with all the coin's features like marketCap, alltime highs, rank and number of coins in circulation. 
-* **/cryptos (GetMethod)**:  retrieves all the saved cryptos of the client from the database.
+* **/cryptos (GetMethod)**:  retrieves all the saved crypto coins of a client from the database.
 * **/crypto/id (DeleteMethod)** : deletes a specific crypto currency by id from the database.
 
 ### **Data Storage**
