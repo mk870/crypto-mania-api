@@ -1,5 +1,5 @@
 # Crypto Mania Api (Backend)
-<img src="https://i.ibb.co/Hdq55GW/spring.jpg" alt="spring" align="center" border="0"> 
+<img src="https://i.ibb.co/Hdq55GW/spring.jpg" alt="spring" width="400" align="center" border="0"> 
 
 ## Project Summary 
 * This  is a Restful Spring boot application with CRUD operations that allow users to create an account to the cryptomania app, save or add crypto coins to a personal watchlist, delete those crypto coins and login and out using spring security.
